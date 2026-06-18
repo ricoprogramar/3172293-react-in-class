@@ -58,12 +58,13 @@
 
     /* Typography */
     --main-font: Helvetica, Arial, sans-serif;
+    --font-heading: Helvetica, Arial, sans-serif;
     --secondary-font:Calibri, Helvetica, Arial;
 
       /* Font weights crudos */
-    --font-weight-light: 300;
+    --font-weight-light: 200;
     --font-weight-regular: 400;
-    --font-weight-bold: 700;    
+    --font-weight-bold: 800;    
 
     /* Font-size */
     --fs-xxxxl: 5rem; /* Ultra grande */

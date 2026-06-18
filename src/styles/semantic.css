@@ -54,11 +54,14 @@
     --semantic-font-size-caption: var(--fs-xxxxs);    /* Caption es texto auxiliar muy pequeño.*/
 
 
+    /* ======= FONT FAMILY ======= */
+    --semantic-font-family-heading: var(--font-heading);
+
     /* ======= FONT WEIGHT ======= */
 
     --semantic-font-weight-heading: var(--font-weight-bold);
     --semantic-font-weight-body: var(--font-weight-regular);
-    --semantic-font-weight-label: var(--font-weight-regular);
+    --semantic-font-weight-label: var(--font-weight-light);
 
     
     /* ============================================= */

@@ -51,9 +51,13 @@
   --text-small: var(--semantic-font-size-small);
   --text-caption: var(--semantic-font-size-caption);
 
+
+  /* ======= FONT FAMILY ======= */
+  --font-heading: var(--semantic-font-family-heading);
+
   /* ======= FONT WEIGHT ======= */
 
-  --font-heading: var(--semantic-font-weight-heading);
+  --font-weight-heading: var(--semantic-font-weight-heading);
   --font-body: var(--semantic-font-weight-body);
   --font-label: var(--semantic-font-weight-label);
   

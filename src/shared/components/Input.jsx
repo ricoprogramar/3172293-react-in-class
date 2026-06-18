@@ -1,5 +1,6 @@
 export default function Input({
     label,
+    error,
     htmlFor,
     type = "text",
     variant= "primary",
@@ -34,7 +35,7 @@ export default function Input({
 
 
     return (
-      <div className="w-80">
+      <div className="w-80" >
         {/* Label */}
         <label
           // htmlFor con kebab-case
@@ -43,13 +44,8 @@ export default function Input({
                     block
                     text-caption                    
                     text-secondary
-                    ${
-                      size === "sm"
-                        ? "-mb-2"
-                        : size === "md"
-                          ? "mb-0"
-                          : "mb-1"
-                    }
+                    ${size === "sm" ? "-mb-2" : size === "md" ? "mb-0" : "mb-1"}
+                    ${error ? "text-red-800" : "text-caption"}
                 `}
         >
           {label}
@@ -97,10 +93,15 @@ export default function Input({
                     focus:ring-brand
                     ${variants[variant]}
                     ${sizes[size]}
+                    ${error ? "border-red-800" : "border border-border"}
                 `}
             {...props}
           />
         </div>
+        {/* Feedback */}
+        {error && (
+          <p className="text-caption text-red-800 place-self-start">{error}</p>
+        )}
       </div>
     );
 }
